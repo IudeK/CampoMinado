@@ -9,6 +9,7 @@ let tilesClicked = 0;
 let flagEnabled = false;
 
 let gameOver = false;
+let confettiCount = 0
 
 function resetGame(){
     window.location.reload();
@@ -173,8 +174,19 @@ function checkMine(r, c) {
     }
 
     if (tilesClicked == rows * columns - minesCount) {
-        document.getElementById("mines-count").innerText = "Nível Concluído!!!";
+        document.getElementById("mines-count").innerText = "Parabéns!! Nível Concluído";
         gameOver = true;
+
+        if(confettiCount != 0){
+            return
+        }
+
+        confettiCount = 1
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
     }
 }
 
