@@ -174,7 +174,8 @@ function checkMine(r, c) {
     }
 
     if (tilesClicked == rows * columns - minesCount) {
-        document.getElementById("mines-count").innerText = "Parabéns!! Nível Concluído";
+        document.getElementById("mines").style.display = "none";
+        document.getElementById("message").innerText = "Parabéns!! Nível Concluído";
         gameOver = true;
 
         if(confettiCount != 0){
