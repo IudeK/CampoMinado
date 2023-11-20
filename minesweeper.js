@@ -173,7 +173,7 @@ function checkMine(r, c) {
     }
 
     if (tilesClicked == rows * columns - minesCount) {
-        document.getElementById("mines-count").innerText = "Cleared";
+        document.getElementById("mines-count").innerText = "Nível Concluído!!!";
         gameOver = true;
     }
 }
