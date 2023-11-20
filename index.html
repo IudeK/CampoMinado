@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minado</title>
+    <link rel="stylesheet" href="minesweeper.css">
+    <script src="minesweeper.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="difficulty">
+            <h1>Escolha a dificuldade</h1>
+            <button onclick="selectDifficulty('easy')">Fácil</button>
+            <button onclick="selectDifficulty('medium')">Médio</button>
+            <button onclick="selectDifficulty('hard')">Difícil</button>
+        </div>
+    </div>
+    <div id="content" style="display: none;">
+        <div id="action-buttons">
+            <button id="flag-button">🚩</button>
+            <button onclick="resetGame()" id="reset-button">↻</button>
+        </div>
+        <h1>Minas: <span id="mines-count">0</span></h1>
+        <div id="board"></div>
+        <br>
+    </div>
+</body>
+
+</html>

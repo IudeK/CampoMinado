@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#difficulty button {
+    background-color: rgb(79, 116, 190);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    color: azure;
+    font-size: large;
+    font-weight: bold;
+}
+
+#difficulty button:hover {
+    background-color: rgb(67, 99, 163);
+    cursor: pointer;
+}
+
+#board {
+    border: 10px solid darkgray;
+    background-color: lightgray;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid whitesmoke;
+
+    /* text */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-clicked {
+    background-color: darkgrey;
+}
+
+.x1 {
+    color: blue;
+}
+
+.x2 {
+    color: green;
+}
+
+.x3 {
+    color: red;
+}
+
+.x4 {
+    color: navy;
+}
+
+.x5 {
+    color: brown;
+}
+
+.x6 {
+    color: teal;
+}
+
+.x7 {
+    color: black;
+}
+
+.x8 {
+    color: gray;
+}
+
+#flag-button, #reset-button{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+#flag-button :hover, #reset-button :hover{
+    background-color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+
+#action-buttons {
+    display: flex;
+    justify-content: center;
+}
